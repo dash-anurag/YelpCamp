@@ -14,12 +14,15 @@ let commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
-mongoose.connect('mongodb://localhost:27017/yelpcamp', {
+// LOCAL DB: 'mongodb://localhost:27017/yelpcamp'
+
+mongoose.connect("mongodb+srv://admin:password1234@yelpcamp.h3iyx.mongodb.net/yelp_camp?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
   .then(() => console.log('Connected to DB!'))
   .catch(error => console.log(error.message));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"))
