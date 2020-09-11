@@ -14,9 +14,8 @@ let commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
-// LOCAL DB: 'mongodb://localhost:27017/yelpcamp'
-
-mongoose.connect("mongodb+srv://admin:password1234@yelpcamp.h3iyx.mongodb.net/yelp_camp?retryWrites=true&w=majority", {
+let url = process.env.DATABASEURL || "mongodb://localhost:27017/yelpcamp"
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
