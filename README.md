@@ -1,4 +1,6 @@
 # YelpCamp
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/dash-anurag/YelpCamp/blob/master/LICENSE) [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/dash-anurag/YelpCamp/graphs/contributors/)
+
 My implementation of the famous Colt Steele's WebDev Bootcamp Project.
 
 Yelp Camp is a fun application that allows you to view campgrounds with a short description. Once you login or signup you can begin to create your own campgrounds that includes a title, image address and short description.
